@@ -1,0 +1,12 @@
+var user_name_list = ['umar ', 'danish', 'asad', 'hammad'];
+var new_user_name_list = ['Abdul','Kareem', 'Iqbal','Azam'];
+
+user_name_list.map(name =>
+    {
+    var match = new_user_name_list.some(new_name => new_name == name);
+    if (match){
+        console.log("you need to enter a new username");
+} else {
+    console.log("the username is available");
+}
+    })
